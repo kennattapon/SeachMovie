@@ -23,8 +23,12 @@ public class Movie {
 
 	/**
 	 * Required by JPA.
+	 * @param list
+	 * @param string
+	 * @param generateId
 	 */
-	protected Movie() {
+	public Movie(long generateId, String string, List<String> list) {
+		
 	}
 
 	public Movie(String name) {
@@ -45,5 +49,9 @@ public class Movie {
 
 	public List<String> getActors() {
 		return actors;
+	}
+
+	public void setActors(List<String> actors) {
+		this.actors = actors;
 	}
 }
