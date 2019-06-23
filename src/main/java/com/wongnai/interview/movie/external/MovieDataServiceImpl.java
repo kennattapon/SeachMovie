@@ -33,6 +33,7 @@ public class MovieDataServiceImpl implements MovieDataService {
         messageConverters.add(converter);
         restTemplate.setMessageConverters(messageConverters);
 
-        return restTemplate.getForObject(MOVIE_DATA_URL, MoviesResponse.class);
+		return restTemplate.getForObject(MOVIE_DATA_URL, MoviesResponse.class);
+		
 	}
 }
