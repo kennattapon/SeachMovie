@@ -30,7 +30,8 @@ public class MovieDataSynchronizer {
 		long generateId = 0;
 		for(MovieData movieData: moviesResponse) {
 		    generateId++;
-            movieRepository.save(new Movie(generateId, movieData.getTitle(), movieData.getCast()));
+			movieRepository.save(new Movie(generateId, movieData.getTitle(), movieData.getCast()));
+			
         }
 	}
 }
