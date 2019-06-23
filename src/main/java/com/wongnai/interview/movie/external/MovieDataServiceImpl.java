@@ -27,7 +27,7 @@ public class MovieDataServiceImpl implements MovieDataService {
 	@Override
 	public MoviesResponse fetchAll() {
 		RestTemplate restTemplate = new RestTemplate();
-        List<HttpMessageConverter<?>> messageConverters = new ArrayList<>();
+        List<HttpMessageConverter<?>> messageConverters = new ArrayList<>(); 
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setSupportedMediaTypes(Collections.singletonList(MediaType.ALL));
         messageConverters.add(converter);
